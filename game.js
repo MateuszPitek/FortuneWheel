@@ -108,7 +108,7 @@ function checkWin() {
         if (goodAnswer.length == cardsContent.length) {
             alert.style.display = "inherit";
             alert.querySelector("img").src = "IMAGES/fot.jpg";
-            alert.querySelector("p").innerText = "Dziękujemy Kochana Mordo za Twój czas i zaangażowanie! Karolina & Klaudia & Mateusz";
+            alert.querySelector("p").innerText = "Kochana Mordo za Twój czas i zaangażowanie! Karolina & Klaudia & Mateusz";
             $('.demo').fireworks({ sound: true, opacity: 0.9, width: '100%', height: '100%' });
             setTimeout(function () {
                 document.querySelector(".demo").classList.add("hide");
