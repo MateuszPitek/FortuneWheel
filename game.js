@@ -1,42 +1,43 @@
 const words = {
     "wordcontent": [
-        { "word": "elephant", "category": "animal" },
-        { "word": "tortoise", "category": "animal" },
-        { "word": "anaconda", "category": "animal" },
-        { "word": "chipmunk", "category": "animal" },
-        { "word": "snake", "category": "animal" },
-        { "word": "mouse", "category": "animal" },
-        { "word": "hamster", "category": "animal" },
-        { "word": "apple", "category": "fruit" },
-        { "word": "banana", "category": "fruit" },
-        { "word": "pear", "category": "fruit" },
-        { "word": "watermelon", "category": "fruit" },
-        { "word": "blackberry", "category": "fruit" },
-        { "word": "strawberry", "category": "fruit" },
-        { "word": "dumplings", "category": "food" },
-        { "word": "pizza", "category": "food" },
-        { "word": "kebab", "category": "food" },
-        { "word": "lasagne", "category": "food" },
-        { "word": "spaghetti", "category": "food" },
-        { "word": "hamburger", "category": "food" },
-        { "word": "carrot", "category": "vegetable" },
-        { "word": "cucumber", "category": "vegetable" },
-        { "word": "onion", "category": "vegetable" },
-        { "word": "garlic", "category": "vegetable" },
-        { "word": "cauliflower", "category": "vegetable" },
-        { "word": "tomatoes", "category": "vegetable" },
-        { "word": "ticket", "category": "travel" },
-        { "word": "airport", "category": "travel" },
-        { "word": "backpack", "category": "travel" },
-        { "word": "journey", "category": "travel" },
-        { "word": "transport", "category": "travel" },
-        { "word": "train", "category": "travel" },
-        { "word": "poland", "category": "European country" },
-        { "word": "portugal", "category": "European country" },
-        { "word": "switzerland", "category": "European country" },
-        { "word": "italy", "category": "European country" },
-        { "word": "norway", "category": "European country" },
-        { "word": "austria", "category": "European country" },
+        { "word": "dziekujemy", "category": "zwroty grzecznościowe" }
+//         { "word": "elephant", "category": "animal" },
+//         { "word": "tortoise", "category": "animal" },
+//         { "word": "anaconda", "category": "animal" },
+//         { "word": "chipmunk", "category": "animal" },
+//         { "word": "snake", "category": "animal" },
+//         { "word": "mouse", "category": "animal" },
+//         { "word": "hamster", "category": "animal" },
+//         { "word": "apple", "category": "fruit" },
+//         { "word": "banana", "category": "fruit" },
+//         { "word": "pear", "category": "fruit" },
+//         { "word": "watermelon", "category": "fruit" },
+//         { "word": "blackberry", "category": "fruit" },
+//         { "word": "strawberry", "category": "fruit" },
+//         { "word": "dumplings", "category": "food" },
+//         { "word": "pizza", "category": "food" },
+//         { "word": "kebab", "category": "food" },
+//         { "word": "lasagne", "category": "food" },
+//         { "word": "spaghetti", "category": "food" },
+//         { "word": "hamburger", "category": "food" },
+//         { "word": "carrot", "category": "vegetable" },
+//         { "word": "cucumber", "category": "vegetable" },
+//         { "word": "onion", "category": "vegetable" },
+//         { "word": "garlic", "category": "vegetable" },
+//         { "word": "cauliflower", "category": "vegetable" },
+//         { "word": "tomatoes", "category": "vegetable" },
+//         { "word": "ticket", "category": "travel" },
+//         { "word": "airport", "category": "travel" },
+//         { "word": "backpack", "category": "travel" },
+//         { "word": "journey", "category": "travel" },
+//         { "word": "transport", "category": "travel" },
+//         { "word": "train", "category": "travel" },
+//         { "word": "poland", "category": "European country" },
+//         { "word": "portugal", "category": "European country" },
+//         { "word": "switzerland", "category": "European country" },
+//         { "word": "italy", "category": "European country" },
+//         { "word": "norway", "category": "European country" },
+//         { "word": "austria", "category": "European country" },
     ]
 };
 const audioLost = new Audio('audio/mous_laugh.mp3');
@@ -106,8 +107,8 @@ function checkWin() {
         card.classList.contains("show") === true ? goodAnswer.push("1") : goodAnswer;
         if (goodAnswer.length == cardsContent.length) {
             alert.style.display = "inherit";
-            alert.querySelector("img").src = "IMAGES";
-            alert.querySelector("p").innerText = "CONGRATULATIONS!";
+            alert.querySelector("img").src = "IMAGES/fot.jpg";
+            alert.querySelector("p").innerText = "Za wszystko czego nas nauczyłeś! Karolina & Klaudia & Mateusz";
             $('.demo').fireworks({ sound: true, opacity: 0.9, width: '100%', height: '100%' });
             setTimeout(function () {
                 document.querySelector(".demo").classList.add("hide");
